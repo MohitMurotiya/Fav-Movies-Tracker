@@ -1,3 +1,5 @@
+//To check whether a movie is already present or not in the fav list
+
 export const addToFavouritesUtil = (favouritesList, favouriteToAdd) => {
   const existingFavourite = favouritesList.find(
     (fav) => fav.id === favouriteToAdd.id

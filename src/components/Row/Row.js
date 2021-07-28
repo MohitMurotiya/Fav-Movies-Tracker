@@ -47,7 +47,7 @@ function Row({ title, movies }) {
       <div className="row__posters">
         {movies.map((movie) => (
           <>
-            <div className="poster__hover" onClick={() => onModalOpen(movie)}>
+            <div className="poster__hover">
               <img key={movie.id} src={`${movie.poster}`} alt={movie.title} />
               <div className="poster__buttons">
                 <Tooltip title="Show More">

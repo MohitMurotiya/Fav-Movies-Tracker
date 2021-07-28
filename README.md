@@ -7,9 +7,10 @@ Developed this Project using React and Redux. </br>
 ## :sparkles: Features
 
 :heavy_check_mark: &nbsp;&nbsp;Display classification wise movies with Horizontal Scroll<br />
+:heavy_check_mark: &nbsp;&nbsp;Random Movie on the Banner<br />
 :heavy_check_mark: &nbsp;&nbsp;Add/Remove to/from "My list" functionality<br />
 :heavy_check_mark: &nbsp;&nbsp;Detail modal with extra informations about the selected movie<br />
-:heavy_check_mark: &nbsp;&nbsp;Use of Redux, React-Redux, Redux-thunk, Material-UI, React Hooks<br />
+:heavy_check_mark: &nbsp;&nbsp;Use of React Hooks and Redux<br />
 
 ## :rocket: Technologies
 
