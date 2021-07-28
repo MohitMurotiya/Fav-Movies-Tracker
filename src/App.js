@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchMoviesAsync } from "./redux/movies/movieActions";
+import { Route, Switch, Redirect, useLocation } from "react-router-dom";
+import "./App.css";
+import Home from "./components/Home";
+import MoviesLiked from "./components/MoviesLiked/MoviesLiked";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  const dispatch = useDispatch();
+  const location = useLocation();
+
+  useEffect(() => {
+    dispatch(fetchMoviesAsync());
+  }, [fetchMoviesAsync()]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/home" component={Home} />
+        <Route path="/myFav" component={MoviesLiked} />
+      </Switch>
     </div>
   );
 }
