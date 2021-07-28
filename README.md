@@ -4,6 +4,8 @@
 
 Developed this Project using React and Redux. </br>
 
+## ▶️ [Demo](https://fav-movies-tracker.netlify.app/)
+
 ## :sparkles: Features
 
 :heavy_check_mark: &nbsp;&nbsp;Display classification wise movies with Horizontal Scroll<br />
